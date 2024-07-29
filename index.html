@@ -11,6 +11,7 @@
     <!--Scripts-->
     <script src="js/bootstrap.bundle.js"></script>
     <script src="index.js"></script>
+
     <!--Header-->
     <div class="header container-fluid px-5 d-flex justify-content-between">
       <div>
@@ -18,8 +19,28 @@
       </div>
       <div><a href="#" class="text-decoration-none header-a">Oturum aç</a></div>
     </div>
-    <!--Content-->
+
+    <!--Progress Bar-->
     <div class="container content-start">
+      <div class="progress-texts text-center mb-5">
+        <h3>Sistem durumu kontrol ediliyor</h3>
+      </div>
+
+      <div class="progress" style="height: 20px">
+        <div
+          id="progress-bar"
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          role="progressbar"
+          style="width: 0%"
+          aria-valuenow="0"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+    </div>
+
+    <!--Content-->
+    <div id="main-content-1" class="container content-start d-none">
       <div id="status-container" class="status-container">
         <div class="check-icon" style="display: none">
           <img src="/icons/check-icon.svg" alt="" />
@@ -37,7 +58,7 @@
           <a href="#">Son olayları görüntüle</a>
         </p>
         <div class="status-icons mt-4">
-          <div class="icon">
+          <div class="icon texts-market">
             <img
               src="/icons/mini-check.svg"
               class="bi bi-check-circle"
@@ -45,11 +66,11 @@
             />
             Sorun yok
           </div>
-          <div class="icon">
+          <div class="icon texts-market">
             <img src="/icons/maintenance-icon.svg" class="bi bi-tools" alt="" />
             Bakım
           </div>
-          <div class="icon">
+          <div class="icon texts-market">
             <img
               src="/icons/error-icon.svg"
               class="bi bi-exclamation-circle"
@@ -57,7 +78,7 @@
             />
             Düşük
           </div>
-          <div class="icon">
+          <div class="icon texts-market">
             <img
               src="/icons/warning-icon.svg"
               class="bi bi-exclamation-triangle"
@@ -65,16 +86,17 @@
             />
             Kısmi Kesinti
           </div>
-          <div class="icon">
+          <div class="icon texts-market">
             <img src="/icons/minus.svg" class="bi bi-x-circle" alt="" />
             Kesinti
           </div>
         </div>
       </div>
     </div>
+
     <!--Table-->
-    <div class="container mt-5">
-      <div class="status-card">
+    <div id="main-content-2" class="container mt-5 d-none">
+      <div class="status-card texts-market">
         <h5 class="status-title">Hizmetler</h5>
         <table class="status-table">
           <tbody>
@@ -192,9 +214,12 @@
         </table>
       </div>
     </div>
-    <!--Altyazi-->
-    <div class="container mt-5">
-      <div class="foot-text d-flex justify-content-center flex-column">
+
+    <!--Footer-->
+    <div id="main-content-3" class="container mt-5 d-none">
+      <div
+        class="foot-text d-flex justify-content-center flex-column texts-market"
+      >
         <p class="text-center first">
           Mağazaların küçük bir yüzdesini etkileyen bazı sorunlar burada
           gösterilmeyebilir.
