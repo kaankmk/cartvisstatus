@@ -99,6 +99,22 @@ body {
 /*HEADERS*/
 
 /*CHECKFORM*/
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.progress-texts > * {
+  background: #e7effd;
+  padding: 20px;
+  border-radius: 15px;
+  color: #3d6dd2;
+  font-size: 19px;
+  font-weight: 400;
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
 .error-text {
   color: #dc3545;
 }
