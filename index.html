@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Cartvis Status</title>
+  </head>
+  <body>
+    <!--Scripts-->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+    <!--Header-->
+    <div class="header container-fluid px-5 d-flex justify-content-between">
+      <div>
+        <img src="/img/cartvis_status_logo.svg" alt="" class="cartvis-logo" />
+      </div>
+      <div><a href="#" class="text-decoration-none header-a">Oturum aç</a></div>
+    </div>
+    <!--Content-->
+    <div class="container content-start">
+      <div id="status-container" class="status-container">
+        <div class="check-icon" style="display: none">
+          <img src="/icons/check-icon.svg" alt="" />
+        </div>
+        <div class="error-icon" style="display: none">
+          <img src="/icons/error-icon-red.svg" alt="" />
+        </div>
+        <h3 class="mt-4 success-text d-none">Tüm sistemler çalışır durumda</h3>
+        <h3 class="mt-4 error-text d-none">
+          Tüm sistemler çalışır durumda değil
+        </h3>
+        <p class="mt-4">
+          Mağazanızın ayrıntılı durumunu görüntülemek için
+          <a href="#">Oturum aç</a> <br />
+          <a href="#">Son olayları görüntüle</a>
+        </p>
+        <div class="status-icons mt-4">
+          <div class="icon">
+            <img
+              src="/icons/mini-check.svg"
+              class="bi bi-check-circle"
+              alt=""
+            />
+            Sorun yok
+          </div>
+          <div class="icon">
+            <img src="/icons/maintenance-icon.svg" class="bi bi-tools" alt="" />
+            Bakım
+          </div>
+          <div class="icon">
+            <img
+              src="/icons/error-icon.svg"
+              class="bi bi-exclamation-circle"
+              alt=""
+            />
+            Düşük
+          </div>
+          <div class="icon">
+            <img
+              src="/icons/warning-icon.svg"
+              class="bi bi-exclamation-triangle"
+              alt=""
+            />
+            Kısmi Kesinti
+          </div>
+          <div class="icon">
+            <img src="/icons/minus.svg" class="bi bi-x-circle" alt="" />
+            Kesinti
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Table-->
+    <div class="container mt-5">
+      <div class="status-card">
+        <h5 class="status-title">Hizmetler</h5>
+        <table class="status-table">
+          <tbody>
+            <tr>
+              <td>
+                <div class="td-content d-flex">
+                  <div class="td-content-images">
+                    <img
+                      src="/icons/mini-check.svg"
+                      class="status-icon"
+                      alt=""
+                    />
+                  </div>
+                  <div class="td-content-texts">
+                    <p class="text-start m-0 operationName">Admin</p>
+                    <p class="text-start m-0 statusMessage">
+                      Bilinen bir sorun yok
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-content d-flex">
+                  <div class="td-content-images">
+                    <img
+                      src="/icons/mini-check.svg"
+                      class="status-icon"
+                      alt=""
+                    />
+                  </div>
+                  <div class="td-content-texts">
+                    <p class="text-start m-0 operationName">Account</p>
+                    <p class="text-start m-0 statusMessage">
+                      Bilinen bir sorun yok
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-content d-flex">
+                  <div class="td-content-images">
+                    <img
+                      src="/icons/mini-check.svg"
+                      class="status-icon"
+                      alt=""
+                    />
+                  </div>
+                  <div class="td-content-texts">
+                    <p class="text-start m-0 operationName">API & Mobile</p>
+                    <p class="text-start m-0 statusMessage">
+                      Bilinen bir sorun yok
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-content d-flex">
+                  <div class="td-content-images">
+                    <img
+                      src="/icons/mini-check.svg"
+                      class="status-icon"
+                      alt=""
+                    />
+                  </div>
+                  <div class="td-content-texts">
+                    <p class="text-start m-0 operationName">Support</p>
+                    <p class="text-start m-0 statusMessage">
+                      Bilinen bir sorun yok
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-content d-flex">
+                  <div class="td-content-images">
+                    <img
+                      src="/icons/mini-check.svg"
+                      class="status-icon"
+                      alt=""
+                    />
+                  </div>
+                  <div class="td-content-texts">
+                    <p class="text-start m-0 operationName">
+                      Third party services
+                    </p>
+                    <p class="text-start m-0 statusMessage">
+                      Bilinen bir sorun yok
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="td-content d-flex">
+                  <div class="td-content-images">
+                    <img
+                      src="/icons/mini-check.svg"
+                      class="status-icon"
+                      alt=""
+                    />
+                  </div>
+                  <div class="td-content-texts">
+                    <p class="text-start m-0 operationName">
+                      Reports and Dashboards
+                    </p>
+                    <p class="text-start m-0 statusMessage">
+                      Bilinen bir sorun yok
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!--Altyazi-->
+    <div class="container mt-5">
+      <div class="foot-text d-flex justify-content-center flex-column">
+        <p class="text-center first">
+          Mağazaların küçük bir yüzdesini etkileyen bazı sorunlar burada
+          gösterilmeyebilir.
+        </p>
+        <p class="text-center second">
+          Sorun mu yaşıyorsunuz?
+          <span><a href="#">Destek ekibiyle iletişime geçin</a></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
