@@ -184,9 +184,7 @@ body {
   vertical-align: middle;
   width: 33.33%; /* Equal width for all columns */
 }
-.status-table tr:last-child td {
-  border-bottom: none;
-}
+
 .status-icon {
   margin-right: 15px;
 }
@@ -263,6 +261,9 @@ body {
   /* Desktop */
   .foot-text {
     margin-bottom: 3rem;
+  }
+  .status-table tr:last-child td {
+    border-bottom: none;
   }
 }
 /*MEDIAQUERY*/
